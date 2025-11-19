@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Undangan Sweet Seventeen Ivana</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Awan animasi -->
+<div class="cloud" style="top:50px; animation-duration:25s;"></div>
+
+<div class="cloud" style="top:120px; animation-duration:30s;"></div>
+
+<div class="cloud" style="top:200px; animation-duration:35s;"></div>
+
+<!-- Bunga animasi -->
+<div class="flower" style="left:40%; animation-duration:8s;"></div>
+<div class="flower" style="left:60%; animation-duration:10s;"></div>
+<div class="flower" style="left:80%; animation-duration:12s;"></div>
+
+<!-- Love animasi -->
+<div class="heart" style="left:50%; animation-duration:6s;"></div>
+<div class="heart" style="left:100%; animation-duration:8s;"></div>
+<div class="heart" style="left:150%; animation-duration:10s;"></div>
+
+<!-- Kartu undangan -->
+<div class="card">
+
+    <div class="name">Ivana</div>
+
+    <div class="text">
+        Dengan hati yang lembut, aku ingin mengajakmu untuk hadir pada <b>sweet seventeen-ku</b>.<br>
+        Mari berbagi sedikit kebahagiaan dan cerita di hari yang berarti ini 🌷🤍.<br>
+        <b>Minggu, 6 September 2026</b><br>
+        Di rumah, jam 13.00 WIB.<br>
+        Dresscode: pink & putih &gt;&lt;
+    </div>
+
+    <!-- Lokasi Google Maps -->
+    <a class="btn" target="_blank"
+       href="https://www.google.com/maps/search/?api=1&query=-7.111844, 109.962166">
+       📍 Lihat Lokasi
+    </a>
+
+    <!-- Tombol kejutan -->
+    <div class="btn" onclick="openPopup()">🎂 Lihat Kue & Ucapan</div>
+
+</div>
+
+<!-- Popup kue + ucapan -->
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <h3>🎂</h3>
+        <p>kedatanganmu lebih berharga dari apapun💖</p>
+        <div class="btn close-btn" onclick="closePopup()">Tutup</div>
+    </div>
+</div>
+
+<script>
+function openPopup(){ document.getElementById("popup").style.display = "flex"; }
+function closePopup(){ document.getElementById("popup").style.display = "none"; }
+</script>
+
+</body>
+</html>
